@@ -1,0 +1,31 @@
+
+    {
+        "name": "Claudio Astolfo",
+        "description": "Um padeiro que gosta de automóveis rebaixados",
+        "idSprite": null
+    },
+    {
+        "name": "Ronaldo Siloveira",
+        "description": "Um marceneiro que possui gostos duvidosos",
+        "idSprite": null
+    },
+    {
+        "name": "Cleide Seribineide",
+        "description": "Uma vendedora ambulante de camisas da praça é nossa",
+        "idSprite": null
+    },
+    {
+        "name": "Claudia Astolfa",
+        "description": "Esposa do Claudio Astolfo",
+        "idSprite": null
+    },
+    {
+        "name": "Ronaldinho Junior",
+        "description": "Filho do Ronaldo Siloveira",
+        "idSprite": null
+    },
+    {
+        "name": "Silva da Silva Silveira Silva",
+        "description": "Silva",
+        "idSprite": null
+    }

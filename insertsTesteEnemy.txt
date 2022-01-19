@@ -1,0 +1,40 @@
+{
+	"health" : 200,
+	"attack" : 100,
+	"defense" : 120,
+	"name" : "Cavalo Revoltado",
+	"description" : "Um cavalo revoltado, tem um fraco por maçãs",
+	"level" : 13,
+	"xpWhenKilled" : 25,
+	"maxHealth" : 200
+},
+{
+	"health" : 999,
+	"attack" : 999,
+	"defense" : 999,
+	"name" : "João Do Linux"
+	"description" : "Falaram pra ele que Windows é melhor que Linux",
+	"level" : 999,
+	"xpWhenKilled" : 253,
+	"maxHealth" : 999
+},
+{
+	"health" : 20,
+	"attack" : 100,
+	"defense" : 120,
+	"name" : "Pay she",
+	"description" : "Um peixe ou uma piada ruim? Nunca saberemos",
+	"level" : 2,
+	"xpWhenKilled" : 5,
+	"maxHealth" : 12
+},
+{
+	"health" : 358,
+	"attack" : 130,
+	"defense" : 120,
+	"name" : "Sylveon Shiny",
+	"description" : "Sim, pokémon",
+	"level" : 54,
+	"xpWhenKilled" : 250,
+	"maxHealth" : 358
+}

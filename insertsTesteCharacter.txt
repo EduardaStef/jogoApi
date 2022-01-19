@@ -1,0 +1,40 @@
+{
+"name" : "Lumine",
+"health" : 450,
+"attack" : 320,
+"defense" : 300,
+"level" : 12,
+"xp" : 458,
+"maxHealth" : 450
+}
+
+{
+"name" : "Xiao",
+"health" : 4500,
+"attack" : 2200,
+"defense" : 1300,
+"level" : 17,
+"xp" : 4580,
+"maxHealth" : 4500
+}
+
+{
+"name" : "Amber",
+"health" : 100,
+"attack" : 90,
+"defense" : 85,
+"level" : 5,
+"xp" : 67,
+"maxHealth" : 120
+}
+
+
+{
+"name" : "Jean",
+"health" : 12000,
+"attack" : 6090,
+"defense" : 4090,
+"level" : 59,
+"xp" : 67000,
+"maxHealth" : 12000
+}
