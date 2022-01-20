@@ -2,7 +2,6 @@ package com.goDev.jogoApi.modelo;
 
 import java.io.Serializable;
 import java.util.List;
-import java.util.Set;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -12,10 +11,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
-import javax.persistence.Table;
 
-@Entity(name = "Enemy")
-@Table(name = "enemy")
+@Entity
 public class Enemy implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
@@ -51,11 +48,11 @@ public class Enemy implements Serializable{
 	@Column(nullable = false)
 	private Integer maxHealth;
 	
-	@OneToMany(mappedBy = "enemy", cascade = CascadeType.ALL)
+	@OneToMany(cascade = CascadeType.ALL)
 	private List<Dialogue> dialogues;
 
 	public Enemy() {
-		
+		super();
 	};
 	
 	public Enemy(Long id, Integer health, Integer attack, Integer defense, String name, String description,
