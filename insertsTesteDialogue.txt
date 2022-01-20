@@ -1,0 +1,20 @@
+{
+    "idEnemy" : {
+"id" : 14
+},
+"dialogue" : "aaaaa"
+}
+
+{
+    "idNpc" : {
+"id" : 5
+},
+"dialogue" : "Silva? "
+}
+
+{
+    "idEnemy" : {
+"id" : 15
+},
+"dialogue" : "glub glub"
+}
