@@ -8,7 +8,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
 
 @Entity
 public class Character implements Serializable{
@@ -31,9 +30,6 @@ public class Character implements Serializable{
 	@Column
 	private Integer defense;
 	
-	@OneToOne
-	private CharacterSprite idSprite;
-	
 	@Column(nullable = false)
 	private Integer level;
 	
@@ -50,7 +46,7 @@ public class Character implements Serializable{
 		
 	};
 	
-	public Character(Long id, String name, Integer health, Integer attack, Integer defense, CharacterSprite idSprite,
+	public Character(Long id, String name, Integer health, Integer attack, Integer defense,
 			Integer level, Integer xp, Integer maxHealth, GameUser idUser) {
 		super();
 		this.id = id;
@@ -58,7 +54,6 @@ public class Character implements Serializable{
 		this.health = health;
 		this.attack = attack;
 		this.defense = defense;
-		this.idSprite = idSprite;
 		this.level = level;
 		this.xp = xp;
 		this.maxHealth = maxHealth;
@@ -103,14 +98,6 @@ public class Character implements Serializable{
 
 	public void setDefense(Integer defense) {
 		this.defense = defense;
-	}
-
-	public CharacterSprite getIdSprite() {
-		return idSprite;
-	}
-
-	public void setIdSprite(CharacterSprite idSprite) {
-		this.idSprite = idSprite;
 	}
 
 	public Integer getLevel() {

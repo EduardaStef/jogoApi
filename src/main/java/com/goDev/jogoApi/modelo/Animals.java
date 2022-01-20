@@ -42,15 +42,12 @@ public class Animals implements Serializable{
 	@Column(nullable = false)
 	private Integer maxHealth;
 	
-	@OneToOne
-	private CharacterSprite idSprite;
-
 	public Animals() {
 		
 	};
 	
 	public Animals(Long id, String specie, Integer level, Integer xpWhenKilled, Integer attack, Integer defense,
-			Integer health, Boolean paceful, Integer maxHealth, CharacterSprite idSprite) {
+			Integer health, Boolean paceful, Integer maxHealth) {
 		super();
 		this.id = id;
 		this.specie = specie;
@@ -61,9 +58,9 @@ public class Animals implements Serializable{
 		this.health = health;
 		this.paceful = paceful;
 		this.maxHealth = maxHealth;
-		this.idSprite = idSprite;
 	}
-
+	
+	
 	public Long getId() {
 		return id;
 	}
@@ -136,12 +133,5 @@ public class Animals implements Serializable{
 		this.paceful = paceful;
 	}
 
-	public CharacterSprite getIdSprite() {
-		return idSprite;
-	}
-
-	public void setIdSprite(CharacterSprite idSprite) {
-		this.idSprite = idSprite;
-	}
 
 }

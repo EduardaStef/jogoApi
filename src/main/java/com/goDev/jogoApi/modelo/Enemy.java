@@ -41,9 +41,7 @@ public class Enemy implements Serializable{
 	
 	@Column(nullable = false)
 	private Integer level;
-	
-	@OneToOne
-	private CharacterSprite idSprite;
+
 	
 	@Column(nullable = false)
 	private Integer maxHealth;
@@ -56,7 +54,7 @@ public class Enemy implements Serializable{
 	};
 	
 	public Enemy(Long id, Integer health, Integer attack, Integer defense, String name, String description,
-			Integer xpWhenKilled, Integer level, CharacterSprite idSprite, Integer maxHealth) {
+			Integer xpWhenKilled, Integer level, Integer maxHealth) {
 		super();
 		this.id = id;
 		this.health = health;
@@ -66,7 +64,6 @@ public class Enemy implements Serializable{
 		this.description = description;
 		this.xpWhenKilled = xpWhenKilled;
 		this.level = level;
-		this.idSprite = idSprite;
 		this.maxHealth = maxHealth;
 	}
 
@@ -132,14 +129,6 @@ public class Enemy implements Serializable{
 
 	public void setXpWhenKilled(Integer xpWhenKilled) {
 		this.xpWhenKilled = xpWhenKilled;
-	}
-
-	public CharacterSprite getIdSprite() {
-		return idSprite;
-	}
-
-	public void setIdSprite(CharacterSprite idSprite) {
-		this.idSprite = idSprite;
 	}
 
 	public Integer getMaxHealth() {

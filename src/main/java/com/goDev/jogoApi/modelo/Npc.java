@@ -27,18 +27,15 @@ public class Npc implements Serializable{
 	@Column
 	private String description;
 	
-	@OneToOne
-	private CharacterSprite idSprite;
 	
 	@OneToMany(cascade = CascadeType.ALL)
 	private List<Dialogue> dialogues;
 
-	public Npc(Long id, String name, String description, CharacterSprite idSprite) {
+	public Npc(Long id, String name, String description) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.description = description;
-		this.idSprite = idSprite;
 	}
 	
 	public Npc() {
@@ -67,14 +64,6 @@ public class Npc implements Serializable{
 
 	public void setDescription(String description) {
 		this.description = description;
-	}
-
-	public CharacterSprite getIdSprite() {
-		return idSprite;
-	}
-
-	public void setIdSprite(CharacterSprite idSprite) {
-		this.idSprite = idSprite;
 	}
 
 	public static long getSerialversionuid() {

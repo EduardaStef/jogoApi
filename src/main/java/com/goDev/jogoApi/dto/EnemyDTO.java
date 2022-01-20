@@ -1,7 +1,5 @@
 package com.goDev.jogoApi.dto;
 
-import com.goDev.jogoApi.modelo.CharacterSprite;
-
 public class EnemyDTO {
 
 	public Integer health;
@@ -17,8 +15,6 @@ public class EnemyDTO {
 	public String description;
 	
 	public Integer xpWhenKilled;
-	
-	public CharacterSprite characterSprite;
 	
 	public Integer maxHealth;
 }

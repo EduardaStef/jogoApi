@@ -1,7 +1,5 @@
 package com.goDev.jogoApi.dto;
 
-import com.goDev.jogoApi.modelo.CharacterSprite;
-
 public class AnimalsDTO {
 
 	public Long id;
@@ -19,8 +17,6 @@ public class AnimalsDTO {
 	public Integer health;
 	
 	public boolean paceful;
-	
-	public CharacterSprite characterSprite;
 	
 	public Integer maxHealth;
 	
