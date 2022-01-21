@@ -1,16 +1,12 @@
 package com.goDev.jogoApi.modelo;
 
 import java.io.Serializable;
-import java.util.List;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 
 @Entity
 public class Enemy implements Serializable{
@@ -42,19 +38,12 @@ public class Enemy implements Serializable{
 	@Column(nullable = false)
 	private Integer level;
 
-	
-	@Column(nullable = false)
-	private Integer maxHealth;
-	
-	@OneToMany(cascade = CascadeType.ALL)
-	private List<Dialogue> dialogues;
-
 	public Enemy() {
 		super();
 	};
 	
 	public Enemy(Long id, Integer health, Integer attack, Integer defense, String name, String description,
-			Integer xpWhenKilled, Integer level, Integer maxHealth) {
+			Integer xpWhenKilled, Integer level) {
 		super();
 		this.id = id;
 		this.health = health;
@@ -64,7 +53,6 @@ public class Enemy implements Serializable{
 		this.description = description;
 		this.xpWhenKilled = xpWhenKilled;
 		this.level = level;
-		this.maxHealth = maxHealth;
 	}
 
 	public Long getId() {
@@ -131,13 +119,6 @@ public class Enemy implements Serializable{
 		this.xpWhenKilled = xpWhenKilled;
 	}
 
-	public Integer getMaxHealth() {
-		return maxHealth;
-	}
-
-	public void setMaxHealth(Integer maxHealth) {
-		this.maxHealth = maxHealth;
-	}
 	
 	
 }

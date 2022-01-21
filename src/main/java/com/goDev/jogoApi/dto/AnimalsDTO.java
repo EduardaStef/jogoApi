@@ -16,10 +16,6 @@ public class AnimalsDTO {
 	
 	public Integer health;
 	
-	public boolean paceful;
-	
-	public Integer maxHealth;
-	
 	
 	
 }

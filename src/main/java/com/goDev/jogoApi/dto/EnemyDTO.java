@@ -16,5 +16,4 @@ public class EnemyDTO {
 	
 	public Integer xpWhenKilled;
 	
-	public Integer maxHealth;
 }

@@ -7,7 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 
 @Entity
 public class Animals implements Serializable{
@@ -36,18 +35,12 @@ public class Animals implements Serializable{
 	@Column
 	private Integer health;
 	
-	@Column
-	private Boolean paceful;
-	
-	@Column(nullable = false)
-	private Integer maxHealth;
-	
 	public Animals() {
 		
 	};
 	
 	public Animals(Long id, String specie, Integer level, Integer xpWhenKilled, Integer attack, Integer defense,
-			Integer health, Boolean paceful, Integer maxHealth) {
+			Integer health) {
 		super();
 		this.id = id;
 		this.specie = specie;
@@ -56,8 +49,6 @@ public class Animals implements Serializable{
 		this.attack = attack;
 		this.defense = defense;
 		this.health = health;
-		this.paceful = paceful;
-		this.maxHealth = maxHealth;
 	}
 	
 	
@@ -117,21 +108,5 @@ public class Animals implements Serializable{
 		this.health = health;
 	}
 	
-	public Integer getMaxHealth() {
-		return maxHealth;
-	}
-
-	public void setMaxHealth(Integer maxHealth) {
-		this.maxHealth = maxHealth;
-	}
-
-	public Boolean getPaceful() {
-		return paceful;
-	}
-
-	public void setPaceful(Boolean paceful) {
-		this.paceful = paceful;
-	}
-
 
 }
